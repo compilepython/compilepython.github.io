@@ -1,0 +1,45 @@
+@media only print {  /* So that printouts look reasonable*/
+    main        { min-height: 70vh; display: flex; flex-flow: row wrap; line-height: 150% }
+    aside       { display: none }
+    body { font-family: URWBookman; width: 99vw;     font-size: 14px; margin-top: 10mm; }
+
+    header > h2 { margin-bottom: 0em; padding-bottom: 0em;}
+    header > h1 { display: None; }
+    header > * { margin: 0; padding: 0; }
+    header { margin: 0; padding: 0; min-height: 0;}
+
+    article     { flex: 1 0 20em;   width: 99vw; padding-left: 2em; /* overflow: scroll; */ }
+
+    code, pre {
+        font-size: 11.5px;
+    }
+
+    pre > code.sourceCode, code, pre {
+        overflow-x: auto;
+        white-space: pre-wrap;
+        word-wrap: break-word;
+    }
+/*    code, pre {
+        white-space: wrap;
+        word-wrap: break-word;
+    }*/
+    article > * { padding: 0.5em 0 0 0; margin-right: 2em;}
+    li { margin-left:1.5em; margin-top: 0.0em;}
+    li > ul { padding-bottom: 1.0em;}
+    article > h2 { padding: 1em 0 0 0; margin-right: 3em;}
+
+    a { color: #008; text-decoration: None;}
+    a:visited { color: #008; text-decoration: None;}
+
+    .box { display: none }
+    .boxright{ border-radius: 5px 10px 7px 10px; box-shadow: 3px 3px; background-color: white; border: 1px solid; }
+    .boxright   { font-size: 0.9em; width: 30%; min-width: 13em; float: right; padding: 1em 0.5em 1.5em 1.5em; margin: 1.5em; line-height: 130%; }
+    .boxright > ul  { margin-left: 0em; }
+    .boxright > ul > * > ul > li { margin-left: 1em; }
+    .boxright > ul > * > ul  { margin-left: 0em; }
+    .boxright-img  { width: 100%; }
+
+    #disqus_thread {display: None; }
+    footer { margin-top: 2em; padding-top: 1em; background-color; #fff}
+
+}

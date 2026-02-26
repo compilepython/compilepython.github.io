@@ -1,0 +1,85 @@
+* { margin: 0; padding: 0; border: 0; box-sizing: border-box; }
+
+@font-face {
+    font-family: "URWBookman";
+    src: url("fonts/urwbookman-light.otf") format("opentype");
+}
+
+
+#container {
+   background-color: #d2ffb4;
+   background-image: url(/resources/images/green-background.png);
+   background-repeat: no-repeat;
+   background-size: 100%;
+}
+@font-face {
+    font-family: "untaza";
+    src: url("fonts/UnTaza.ttf") format("truetype");
+}
+@font-face {
+    font-family: "UnDotum";
+    src: url("fonts/UnDotum.ttf") format("truetype");
+}
+h1,h2,h3,h4,h5,h6 { font-family: 'Exo 2', sans-serif; }
+
+code, pre {
+    font-size: 14.4px;
+}
+pre {
+    line-height: 130%;
+    background-color: rgb(240,255,220);
+    font-family: "untaza", "courier new", courier, monospace;
+    overflow: auto;
+}
+
+h2, h3, h4 > code {
+/*     background-color: #fff; */
+    font-weight: 700;
+}
+li > code {
+    background-color: #fff;
+    font-weight: 700;
+}
+
+p > code {
+    background-color: #fff;
+    font-weight: 700;
+}
+
+body {
+    font-family: UnDotum, URWBookman;
+    width: 90vw;
+    margin: auto;
+/*     background-color: #ffd; */
+    background-color: #fff;
+
+}
+
+header { min-height: 10vh; padding: 1em; }
+header > h1 { font-size: 4em; }
+header > * > a { color: #000; text-decoration: None;}
+header > h2 { font-size: 2em; }
+footer {
+    padding-top: 1em;
+    background-color: #654;
+    min-height: 10vh;
+    font-size: 0.9em;
+
+    border-top-style: solid;
+    border-top-width: 2px;
+    border-color: rgb(200,200,255);
+    background-color: rgb(240,240,240);
+    color: rgb(50,50,50);
+    text-align: center;
+}
+ 
+footer > p {
+    padding: 0.5em;
+}
+
+dt { margin-top: 0.5em;}
+a { text-decoration: None;}
+
+ul { margin-left:1em; }
+ol { margin-left:1em; }
+li { margin-left:1.5em; margin-top: 0.1em;}
